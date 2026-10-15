@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+<title id="title">sickBoyStudio</title><desc id="desc">sickBoyStudio — Projects, people, and work in progress.</desc>
+<rect width="1280" height="340" fill="#131614"/>
+<path d="M64 68H1216M64 272H1216" stroke="#3b423d"/>
+<circle cx="76" cy="42" r="5" fill="#c7ee87"/>
+<text x="94" y="47" fill="#c7ee87" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="3">SICKBOYSTUDIO / GITHUB</text>
+<text x="60" y="199" fill="#f0f0e8" font-family="Arial,Helvetica,sans-serif" font-size="103" font-weight="700" letter-spacing="-5">sickBoyStudio<tspan fill="#c7ee87">.</tspan></text>
+<text x="66" y="308" fill="#adb5ad" font-family="Arial,Helvetica,sans-serif" font-size="14" letter-spacing="2">PROJECTS / PEOPLE / WORK IN PROGRESS</text>
+<path d="M1150 119h66v66m0-66-86 86" fill="none" stroke="#c7ee87" stroke-width="5"/>
+</svg>
