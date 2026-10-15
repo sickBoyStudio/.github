@@ -1,7 +1,7 @@
 blank_issues_enabled: true
 contact_links:
   - name: 🙋 로블록스 개발 질문
-    url: https://github.com/orgs/sickBoyStudio/discussions/categories/q-a
+    url: https://github.com/sickBoyStudio/.github/discussions/categories/q-a
     about: 스크립트, Studio, 퍼블리시 질문은 소통창구 Q&A에 올려 주세요.
   - name: 🌱 로블록스 처음 만들어 보기
     url: https://github.com/sickBoyStudio/.github/blob/main/guides/getting-started.md

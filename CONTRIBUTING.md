@@ -21,7 +21,7 @@ flowchart LR
 - Roblox 프로필 링크
 - 일주일에 쓸 수 있는 시간
 
-조직 밖에 있다면 먼저 [소통창구](https://github.com/orgs/sickBoyStudio/discussions)의 **🤝 팀원 모집** 글에 댓글을 달거나 자기소개를 올려 주세요.
+조직 밖에 있다면 먼저 [소통창구](https://github.com/sickBoyStudio/.github/discussions)의 **🤝 팀원 모집** 글에 댓글을 달거나 자기소개를 올려 주세요.
 
 ## 2. 오너가 받아 주면
 

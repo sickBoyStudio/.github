@@ -1,7 +1,7 @@
 # 🌱 로블록스 게임, 처음 만들어 보기
 
 > 로블록스 게임을 한 번도 안 만들어 봤어도 괜찮습니다.
-> 막히면 언제든 [소통창구 Q&A](https://github.com/orgs/sickBoyStudio/discussions)에 물어보세요. 바보 같은 질문은 없습니다.
+> 막히면 언제든 [소통창구 Q&A](https://github.com/sickBoyStudio/.github/discussions)에 물어보세요. 바보 같은 질문은 없습니다.
 
 ## 4주 로드맵
 

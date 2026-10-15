@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/orgs/sickBoyStudio/discussions"><b>💬 소통창구</b></a> ·
+  <a href="https://github.com/sickBoyStudio/.github/discussions"><b>💬 소통창구</b></a> ·
   <a href="https://github.com/sickBoyStudio/.github/blob/main/guides/getting-started.md"><b>🌱 로블록스가 처음이라면</b></a> ·
   <a href="https://github.com/sickBoyStudio/.github/blob/main/CONTRIBUTING.md"><b>🤝 같이 만들기</b></a> ·
   <a href="https://github.com/sickBoyStudio/.github/blob/main/policies/revenue-share.md"><b>💰 수익 분배</b></a>
@@ -32,6 +32,17 @@ flowchart LR
   E --> F["📈 기여 누적<br/>지분 상향 PR"]
   E --> G["💸 Roblox 그룹<br/>게임별 자동 분배"]
 ```
+
+## 💬 소통창구 — 로블록스가 처음인 사람도 환영
+
+[**소통창구 바로가기 →**](https://github.com/sickBoyStudio/.github/discussions)
+
+| | |
+|---|---|
+| 🙋 **질문 Q&A** | 스크립트, Studio, 퍼블리시, 수익화 무엇이든. 양식대로 쓰면 답이 빨라요 |
+| 🤝 **팀원 모집** | 같이 만들 사람 찾기, 팀에 들어가고 싶을 때 |
+| 🎮 **작품 자랑** | 작은 실험도 OK. 피드백 받기 |
+| 👋 **자기소개·자유** | 처음 왔다면 인사부터 |
 
 ## 📚 규칙과 가이드
 
