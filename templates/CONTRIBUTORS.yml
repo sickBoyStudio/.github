@@ -1,7 +1,8 @@
 # 기여자 설정 — sickBoyStudio 수익 분배 규칙을 따릅니다.
 # https://github.com/sickBoyStudio/.github/blob/main/policies/revenue-share.md
 #
-# - 이 파일은 PR로만 바꿉니다. 오너가 merge하는 순간 효력이 생깁니다.
+# - 이 파일은 PR로 바꿉니다. 사전 합의·양측 동의·적용일을 별도로 확인합니다.
+# - v1.1 개정안 승인 전 policy와 agreement를 일괄 변경하지 않습니다.
 # - share 는 이 게임 수익(Earned Robux)에 대한 퍼센트입니다.
 #   오너 몫 = 100 - (기여자 share 합계)
 # - 첫 기여자 등록은 share: 5 로 추가합니다. 올릴 때는 한 번에 최대 +5%p.

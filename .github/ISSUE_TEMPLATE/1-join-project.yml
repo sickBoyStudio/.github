@@ -1,66 +1,30 @@
-name: 🤝 공동제작 참여 신청
-description: 이 게임을 같이 만들고 싶어요
-title: "[참여 신청] "
-labels: ["참여 신청"]
+name: 프로젝트 참여
+description: 역할과 작업 범위를 제안합니다.
+title: '[프로젝트 참여] '
 body:
-  - type: markdown
-    attributes:
-      value: |
-        오너가 신청을 받아 주면 이 레포에 쓰기 권한이 생깁니다.
-        첫 작업 PR이 merge된 뒤 `CONTRIBUTORS.yml` 등록 PR을 보내면 **게임 수익의 5%** 가 제안됩니다.
-        → [공동제작 참여 가이드](https://github.com/sickBoyStudio/.github/blob/main/CONTRIBUTING.md)
-  - type: dropdown
-    id: area
-    attributes:
-      label: 맡고 싶은 일
-      multiple: true
-      options:
-        - 프로그래밍
-        - 맵·레벨 디자인
-        - 3D 모델링
-        - 애니메이션
-        - UI·그래픽
-        - 사운드
-        - 기획·밸런스
-        - QA·테스트
-        - 기타
-    validations:
-      required: true
-  - type: textarea
-    id: plan
-    attributes:
-      label: 구체적으로 하고 싶은 작업
-      placeholder: 예) 2층 실험실 맵을 만들고 조명을 손보고 싶어요
-    validations:
-      required: true
-  - type: textarea
-    id: portfolio
-    attributes:
-      label: 보여 줄 수 있는 작업물
-      description: 다른 레포, 로블록스 게임, 영상, 포트폴리오 링크
-  - type: input
-    id: roblox
-    attributes:
-      label: Roblox 프로필 링크
-      placeholder: https://www.roblox.com/users/123456789/profile
-    validations:
-      required: true
-  - type: dropdown
-    id: time
-    attributes:
-      label: 일주일에 쓸 수 있는 시간
-      options:
-        - 5시간 미만
-        - 5~10시간
-        - 10~20시간
-        - 20시간 이상
-    validations:
-      required: true
-  - type: checkboxes
-    id: agree
-    attributes:
-      label: 확인
-      options:
-        - label: "[운영 규칙](https://github.com/sickBoyStudio/.github/blob/main/GOVERNANCE.md), [수익 분배 규칙](https://github.com/sickBoyStudio/.github/blob/main/policies/revenue-share.md), [저작권과 사용 허가](https://github.com/sickBoyStudio/.github/blob/main/policies/copyright-and-licensing.md)를 읽었습니다"
-          required: true
-        - label: 만 19세 미만이라면 기여자 등록 때 보호자 동의가 필요하다는 것을 압니다
+- type: markdown
+  attributes:
+    value: 이 이슈는 공개될 수 있습니다. 개인정보, 계약·정산 원본, 비밀정보와 보안 취약점은 첨부하지 마세요.
+- type: textarea
+  id: area
+  attributes:
+    label: 관심 역할과 작업
+  validations:
+    required: true
+- type: textarea
+  id: portfolio
+  attributes:
+    label: 공개 가능한 작업물
+    description: 공개 링크만 작성해 주세요.
+  validations:
+    required: false
+- type: textarea
+  id: availability
+  attributes:
+    label: 참여 가능 범위
+    description: 무리한 시간 약속 대신 가능한 일정과 범위를 적습니다.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: 작업 전에 범위·검수·보상·권리를 합의합니다. 신청만으로 권한이나 수익 배분이 확정되지 않습니다. [참여 안내](https://github.com/sickBoyStudio/.github/blob/main/CONTRIBUTING.md)
