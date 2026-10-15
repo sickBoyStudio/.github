@@ -1,6 +1,5 @@
 <p align="center">
   <a href="https://github.com/sickBoyStudio/gallery"><img src="crew-6.webp" alt="sickBoyStudio 6인 단체 사진" width="38%"></a>
-  <a href="https://github.com/sickBoyStudio/gallery"><img src="crew-4.webp" alt="sickBoyStudio 4인 단체 사진" width="59.6%"></a>
 </p>
 
 <h1 align="center">sickBoyStudio</h1>
