@@ -1,0 +1,25 @@
+name: 개선 제안
+description: 해결하려는 문제와 변경안을 설명합니다.
+title: '[개선 제안] '
+body:
+- type: markdown
+  attributes:
+    value: 이 이슈는 공개될 수 있습니다. 개인정보, 계약·정산 원본, 비밀정보와 보안 취약점은 첨부하지 마세요.
+- type: textarea
+  id: problem
+  attributes:
+    label: 해결하려는 문제
+  validations:
+    required: true
+- type: textarea
+  id: proposal
+  attributes:
+    label: 제안과 이유
+  validations:
+    required: true
+- type: textarea
+  id: impact
+  attributes:
+    label: 영향·대안·완료 기준
+  validations:
+    required: true

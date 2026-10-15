@@ -1,0 +1,38 @@
+name: 버그 신고
+description: 재현 가능한 오류를 알립니다.
+title: '[버그 신고] '
+body:
+- type: markdown
+  attributes:
+    value: 이 이슈는 공개될 수 있습니다. 개인정보, 계약·정산 원본, 비밀정보와 보안 취약점은 첨부하지 마세요.
+- type: textarea
+  id: summary
+  attributes:
+    label: 문제 요약
+  validations:
+    required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: 재현 단계
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: 기대 결과와 실제 결과
+  validations:
+    required: true
+- type: textarea
+  id: environment
+  attributes:
+    label: 버전·환경
+  validations:
+    required: true
+- type: textarea
+  id: evidence
+  attributes:
+    label: 로그·화면
+    description: 키·쿠키·사용자 정보를 제거해 주세요.
+  validations:
+    required: false

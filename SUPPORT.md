@@ -1,10 +1,18 @@
-# 🆘 도움 받기
+# 지원 안내
 
-| 이런 게 궁금하면 | 여기로 |
-|---|---|
-| 로블록스 개발 질문 (스크립트, Studio, 퍼블리시 …) | [소통창구 🙋 Q&A](https://github.com/sickBoyStudio/.github/discussions) |
-| 처음 시작하는 방법 | [로블록스 처음 만들어 보기](https://github.com/sickBoyStudio/.github/blob/main/guides/getting-started.md) |
-| 수익, DevEx, 세금 | [로블록스 수익구조](https://github.com/sickBoyStudio/.github/blob/main/guides/roblox-revenue.md) · [법적 구조와 세금](https://github.com/sickBoyStudio/.github/blob/main/policies/legal-structure.md) |
-| 같이 만들고 싶을 때 | [공동제작 참여 가이드](https://github.com/sickBoyStudio/.github/blob/main/CONTRIBUTING.md) |
-| 특정 게임의 버그나 작업 | 그 게임 레포의 이슈 (멤버만) |
-| 보안 문제, 유출 | [보안 신고](https://github.com/sickBoyStudio/.github/blob/main/SECURITY.md) |
+| 문의 | 경로 |
+| :--- | :--- |
+| 개발 질문 | [Q&A](https://github.com/sickBoyStudio/.github/discussions/categories/q-a) |
+| 버그·개선 제안 | 해당 저장소의 Issues |
+| 프로젝트 참여 | 해당 프로젝트의 참여 신청 이슈 또는 Discussions |
+| 문서 오류 | 이 저장소의 이슈 또는 PR |
+| 취약점·계정 유출 | [보안 신고](https://github.com/sickBoyStudio/.github/blob/main/SECURITY.md) |
+| 권리·운영 분쟁, 개인정보 수정 | 아래 비공개 연락 경로 확인 |
+
+## 비공개 연락 경로 확인
+
+GitHub에는 일반적인 개인 메시지 기능이 없습니다. 프로젝트에서 별도 안내한 비공개 채널이 있으면 이용해 주세요. 없다면 [연락 경로 요청](https://github.com/sickBoyStudio/.github/issues/new?template=contact.yml)으로 **연락 경로가 필요하다는 사실만** 알려 주세요. 운영진이 확인한 비공개 경로가 마련되기 전에는 상세 자료를 보내지 마세요.
+
+이 요청 자체는 공개됩니다. 공개 요청이 어렵다면 GitHub의 신고 기능을 이용하거나 운영진 프로필에 실제로 공개된 연락 수단을 확인해 주세요. 존재하지 않는 이메일이나 DM을 안내하지 않습니다. 조직 운영진은 저장소 권한 설정에서 확인하며 공개 프로필 표시와 실제 역할은 다를 수 있습니다.
+
+신분증, 법정대리인 서류, 계좌·세금 정보, 미공개 코드와 수익 내역은 공개 이슈에 올리지 않습니다. 응답·처리 시간은 담당자의 가용 시간과 사안에 따라 달라집니다.

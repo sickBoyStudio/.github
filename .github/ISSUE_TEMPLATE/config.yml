@@ -1,8 +1,11 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
-  - name: 🙋 로블록스 개발 질문
-    url: https://github.com/sickBoyStudio/.github/discussions/categories/q-a
-    about: 스크립트, Studio, 퍼블리시 질문은 소통창구 Q&A에 올려 주세요.
-  - name: 🌱 로블록스 처음 만들어 보기
-    url: https://github.com/sickBoyStudio/.github/blob/main/guides/getting-started.md
-    about: 처음이라면 여기서 시작하세요.
+- name: 개발 질문
+  url: https://github.com/sickBoyStudio/.github/discussions/categories/q-a
+  about: 개발 질문과 사용 방법을 논의합니다.
+- name: 보안 신고
+  url: https://github.com/sickBoyStudio/.github/blob/main/SECURITY.md
+  about: 취약점과 비밀정보 노출은 공개 이슈에 올리지 않습니다.
+- name: 지원 안내
+  url: https://github.com/sickBoyStudio/.github/blob/main/SUPPORT.md
+  about: 문의 종류에 맞는 경로를 확인합니다.
