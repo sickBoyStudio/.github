@@ -1,10 +1,11 @@
-Copyright (c) <연도> <오너 이름 또는 GitHub 아이디> and the contributors listed in CONTRIBUTORS.yml.
-All rights reserved.
+Copyright (c) <연도> <확인된 권리자 이름>.
+All rights reserved, except as expressly licensed.
 
-이 저장소의 코드와 에셋은 오픈소스가 아닙니다. 저작권자의 서면(GitHub 이슈 포함) 허락 없이
-복제, 수정, 배포, 다른 게임이나 서비스에서의 사용을 금지합니다.
+배포 전에 권리자와 적용 범위를 확인해 빈칸을 채우세요.
+이 파일은 독점 프로젝트용 예시이며 조직 전체에 자동 적용되지 않습니다.
 
-열람과 학습은 sickBoyStudio 조직 규칙에 따라 허용되며, 사용 허락은 아래 절차로 요청할 수 있습니다.
-https://github.com/sickBoyStudio/.github/blob/main/policies/copyright-and-licensing.md
+별도 라이선스가 명시된 구성 요소에는 해당 라이선스가 적용됩니다.
+GitHub 약관에 따른 권한과 적용 법의 예외를 제한하려는 문서가 아닙니다.
+그 밖의 재사용·수정·배포는 권리자의 명시적 허락을 확인해 주세요.
 
-외부 에셋과 오픈소스 구성 요소는 각각의 라이선스를 따르며 CREDITS.md에 기록되어 있습니다.
+제3자 구성 요소와 사용 조건은 CREDITS.md에서 확인합니다.
