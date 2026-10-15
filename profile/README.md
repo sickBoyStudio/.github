@@ -13,7 +13,17 @@
   <a href="https://github.com/sickBoyStudio/.github/blob/main/SUPPORT.md">도움 받기</a>
 </p>
 
-만들고 있는 게임, 풀리지 않는 코드, 문득 떠오른 아이디어를 나눕니다. 완성된 작업이 아니어도 좋습니다. 구경하다 관심 가는 이야기에 댓글부터 남겨 주세요.
+어떤 게임을 만들고 싶은가요? 마음에 드는 프로젝트를 둘러보고, 직접 해보고 싶은 부분을 이야기해 주세요. 코드 한 기능, 맵의 한 공간, 소리 하나부터 시작할 수 있습니다.
+
+아직 참여할 프로젝트를 정하지 않았다면 작업을 구경하거나 개발 이야기를 나눠도 좋습니다.
+
+## 내 취향의 프로젝트 찾기
+
+[프로젝트 둘러보기](https://github.com/orgs/sickBoyStudio/repositories) · [팀원 모집 보기](https://github.com/sickBoyStudio/.github/discussions/categories/팀원-모집)
+
+프로젝트의 **장르·플레이 방식 → 실제 화면과 소개 → 진행 상황 → 참여할 작업** 순서로 살펴보세요. 관심 가는 부분이 있다면 “이 작업을 맡아보고 싶어요”라고 남겨 주세요. 참여 조건은 담당자와 이야기한 뒤 결정하면 됩니다.
+
+비공개 저장소는 권한이 있는 사람에게만 보입니다. 처음 방문했다면 공개된 팀원 모집 게시판에서 시작할 수 있습니다.
 
 ## 처음 왔다면
 
@@ -33,6 +43,12 @@ GitHub가 익숙하지 않다면 **Discussions는 게시판**, **Issues는 작�
 **모집 글 확인 → 담당자와 역할·범위 이야기 → 참여 절차 확인 → 작업 시작** 순서로 진행합니다.
 
 질문이나 피드백을 남기는 것과 프로젝트의 정식 기여자가 되는 것은 구분합니다. 보상을 전제로 작업한다면 시작 전에 인정 조건, 수익 배분과 작업물 사용 범위를 담당자와 확인해 주세요. 자세한 등록 절차는 [참여 안내](https://github.com/sickBoyStudio/.github/blob/main/CONTRIBUTING.md)에 있습니다.
+
+## 프로젝트를 소개하는 분께
+
+프로젝트마다 **장르·유형 태그와 한 줄 설명**을 붙여 주세요. 스토리가 있다면 README에 배경을 소개하고, 현재 화면·진행 상황·다른 개발자가 맡아볼 작업도 함께 적어 주세요.
+
+[소개 작성 안내](https://github.com/sickBoyStudio/.github/blob/main/guides/project-presentation.md) · [README 양식](https://github.com/sickBoyStudio/.github/blob/main/templates/README.md)
 
 ## 편하게 지내기 위한 약속
 
