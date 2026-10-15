@@ -25,7 +25,8 @@ scripts/check_contributors.py  CONTRIBUTORS.yml 검사기
 .github/
   ISSUE_TEMPLATE/            참여 신청 · 사용 허가 요청 · 침해 신고 (조직 기본 이슈 양식)
   PULL_REQUEST_TEMPLATE.md   조직 기본 PR 양식
-  DISCUSSION_TEMPLATE/       소통창구 글 양식 (파일 이름 = 카테고리 slug. 카테고리 이름을 바꾸면 slug도 바뀌니 파일 이름도 맞춰 바꿀 것)
+  DISCUSSION_TEMPLATE/q-a.yml  소통창구 Q&A 질문 양식 (파일 이름 = 카테고리 slug.
+                               GitHub는 한글 slug에 양식을 붙이지 못해서 Q&A만 영문 이름을 씀)
   workflows/contributors-check.yml   게임 레포에서 호출하는 재사용 워크플로
 ```
 
