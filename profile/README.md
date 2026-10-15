@@ -1,17 +1,22 @@
 <p align="center">
-  <img src="banner.svg" alt="sickBoyStudio — 함께 만들고, 기여한 만큼 나눈다" width="100%">
+  <a href="https://github.com/sickBoyStudio/gallery"><img src="crew-6.webp" alt="sickBoyStudio 6인 단체 사진" width="38%"></a>
+  <a href="https://github.com/sickBoyStudio/gallery"><img src="crew-4.webp" alt="sickBoyStudio 4인 단체 사진" width="59.6%"></a>
 </p>
+
+<h1 align="center">sickBoyStudio</h1>
+<p align="center"><b>함께 만들고, 기여한 만큼 나눈다</b> · 로블록스 게임 개발자 스튜디오</p>
 
 <p align="center">
   <a href="https://github.com/sickBoyStudio/.github/discussions"><b>💬 소통창구</b></a> ·
   <a href="https://github.com/sickBoyStudio/.github/blob/main/guides/getting-started.md"><b>🌱 로블록스가 처음이라면</b></a> ·
   <a href="https://github.com/sickBoyStudio/.github/blob/main/CONTRIBUTING.md"><b>🤝 같이 만들기</b></a> ·
-  <a href="https://github.com/sickBoyStudio/.github/blob/main/policies/revenue-share.md"><b>💰 수익 분배</b></a>
+  <a href="https://github.com/sickBoyStudio/.github/blob/main/policies/revenue-share.md"><b>💰 수익 분배</b></a> ·
+  <a href="https://github.com/sickBoyStudio/gallery"><b>📸 갤러리</b></a>
 </p>
 
 ---
 
-## 👋 sickBoyStudio
+## 👋 우리는
 
 로블록스 게임을 만드는 **개발자들의 협업 스튜디오**입니다. 여기 있는 사람은 모두 개발자이고, 누구나 자기 게임 레포를 만들어 오너가 될 수 있습니다.
 
@@ -43,6 +48,10 @@ flowchart LR
 | 🤝 **팀원 모집** | 같이 만들 사람 찾기, 팀에 들어가고 싶을 때 |
 | 🎮 **작품 자랑** | 작은 실험도 OK. 피드백 받기 |
 | 👋 **자기소개·자유** | 처음 왔다면 인사부터 |
+
+## 📸 갤러리
+
+개발자 단체 사진은 [**gallery**](https://github.com/sickBoyStudio/gallery) 레포에 인원수별(4인 · 6인)로 모읍니다. 사진을 넣고 PR을 보내거나, Git이 낯설면 [사진 올리기 이슈](https://github.com/sickBoyStudio/gallery/issues/new?template=add-photo.yml)에 끌어다 놓으면 됩니다.
 
 ## 📚 규칙과 가이드
 

@@ -6,6 +6,7 @@
 
 ```
 profile/README.md          조직 페이지에 보이는 소개
+profile/crew-*.webp        조직 페이지 대표 사진 (원본과 나머지 사진은 sickBoyStudio/gallery)
 GOVERNANCE.md              운영 규칙
 CONTRIBUTING.md            공동제작 참여 가이드 (PR로 기여자 등록)
 CODE_OF_CONDUCT.md         행동강령
