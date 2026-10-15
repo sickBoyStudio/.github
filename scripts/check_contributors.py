@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import os
+import math
 import sys
 
 import yaml
@@ -49,12 +50,36 @@ class Report:
             print(f"::error file={self.path}::{msg}" if gha else f"오류: {msg}")
 
 
+class UniqueKeyLoader(yaml.SafeLoader):
+    """Do not silently discard earlier values in accounting records."""
+
+
+def unique_mapping(loader, node, deep=False):
+    loader.flatten_mapping(node)
+    seen = set()
+    for key_node, _ in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        try:
+            if key in seen:
+                raise yaml.constructor.ConstructorError(
+                    None, None, f"중복 키: {key}", key_node.start_mark)
+            seen.add(key)
+        except TypeError as exc:
+            raise yaml.constructor.ConstructorError(
+                None, None, "키는 단일 값이어야 합니다", key_node.start_mark) from exc
+    return yaml.SafeLoader.construct_mapping(loader, node, deep=deep)
+
+
+UniqueKeyLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, unique_mapping)
+
+
 def load(path: str, report: Report):
     try:
         with open(path, encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-    except FileNotFoundError:
-        report.error(f"{path} 파일이 없습니다.")
+            data = yaml.load(f, Loader=UniqueKeyLoader)
+    except (OSError, UnicodeError) as exc:
+        report.error(f"{path} 파일을 읽을 수 없습니다: {exc}")
         return None
     except yaml.YAMLError as e:
         report.error(f"YAML 문법 오류: {e}")
@@ -66,7 +91,7 @@ def load(path: str, report: Report):
 
 
 def is_number(v) -> bool:
-    return isinstance(v, (int, float)) and not isinstance(v, bool)
+    return (isinstance(v, int) and not isinstance(v, bool)) or (isinstance(v, float) and math.isfinite(v))
 
 
 def valid_date(v) -> bool:
@@ -188,6 +213,25 @@ def check_change(base: dict, head: dict, actor: str, report: Report) -> None:
     base_owner = login(section(base, "owner").get("github"))
     old, new = by_login(base.get("contributors")), by_login(head.get("contributors"))
 
+    if not actor:
+        report.error("변경 검사에는 PR 작성자(--actor)가 필요합니다.")
+        return
+
+    # The owner must preserve evidence too. A review is still needed for consent.
+    for who, previous in old.items():
+        current = new.get(who)
+        if current is None:
+            report.error(f"기여자 {who} 항목을 삭제할 수 없습니다. 상태와 변경 이력을 남기세요.")
+            continue
+        history = previous.get("history") or []
+        updated = current.get("history") or []
+        if not isinstance(history, list) or not isinstance(updated, list):
+            continue  # Shape validation reports this separately.
+        if updated[:len(history)] != history:
+            report.error(f"기여자 {who}의 기존 history는 수정·삭제하지 말고 정정 항목을 추가하세요.")
+        if previous.get("share") != current.get("share") and len(updated) <= len(history):
+            report.error(f"기여자 {who}의 지분 변경에는 history 추가가 필요합니다.")
+
     if actor == base_owner:
         for who, p in old.items():
             q = new.get(who)
@@ -196,7 +240,7 @@ def check_change(base: dict, head: dict, actor: str, report: Report) -> None:
                             f"status 를 left/revoked 로 바꾸세요.")
             elif is_number(p.get("share")) and is_number(q.get("share")) and q["share"] < p["share"]:
                 report.warn(f"기여자 {p.get('github')} 의 지분이 {p['share']:g}% → {q['share']:g}% 로 "
-                            f"내려갑니다. 수익 분배 규칙 6장 절차(본인 동의 또는 소명 7일)를 거쳤는지 확인하세요.")
+                            f"내려갑니다. 적용 약정의 동의·소명·분쟁 절차와 적용일을 확인하세요. 검사 통과는 하향 승인이 아닙니다.")
         return
 
     for key in ("version", "policy", "project", "owner"):
@@ -273,6 +317,10 @@ def main(argv=None) -> int:
             base_report = Report(args.base)
             base = load(args.base, base_report)
             if base is not None:
+                check_shape(base, base_report)
+            report.errors.extend(f"기준 파일: {e}" for e in base_report.errors)
+            report.warnings.extend(f"기준 파일: {w}" for w in base_report.warnings)
+            if base is not None and not base_report.errors and not report.errors:
                 check_change(base, head, login(args.actor), report)
         elif args.actor and login(args.actor) != login(section(head, "owner").get("github")):
             report.warn("오너가 아닌 사람이 이 파일을 처음 만들었습니다. 오너가 확인하세요.")

@@ -151,5 +151,57 @@ class Change(unittest.TestCase):
         self.assertIn("내려갑니다", out)
 
 
+class Integrity(unittest.TestCase):
+    def test_invalid_base_fails_closed(self):
+        for base in ("invalid: [", "[]", "owner: {}"):
+            with self.subTest(base=base):
+                code, out = run(BASE, base, "owner-dev")
+                self.assertEqual(code, 1, out)
+                self.assertIn("기준 파일", out)
+
+    def test_missing_base_fails_closed(self):
+        with tempfile.TemporaryDirectory() as d:
+            head = os.path.join(d, "head.yml")
+            with open(head, "w") as f:
+                f.write(BASE)
+            with contextlib.redirect_stdout(io.StringIO()):
+                code = cc.main(["--file", head, "--base", os.path.join(d, "missing.yml"), "--actor", "owner-dev"])
+            self.assertEqual(code, 1)
+
+    def test_duplicate_keys_rejected(self):
+        code, out = run(BASE.replace("    share: 5", "    share: 10\n    share: 5"))
+        self.assertEqual(code, 1, out)
+        self.assertIn("중복 키", out)
+
+    def test_nonfinite_numbers_rejected(self):
+        for value in (".nan", ".inf", "-.inf"):
+            with self.subTest(value=value):
+                code, out = run(BASE.replace("    share: 5", "    share: " + value))
+                self.assertEqual(code, 1, out)
+
+    def test_missing_actor_rejected(self):
+        code, out = run(BASE, BASE)
+        self.assertEqual(code, 1, out)
+        self.assertIn("--actor", out)
+
+    def test_owner_cannot_delete_contributor(self):
+        head = BASE.split("contributors:")[0] + "contributors: []\n"
+        code, out = run(head, BASE, "owner-dev")
+        self.assertEqual(code, 1, out)
+
+    def test_history_cannot_be_rewritten_by_either_party(self):
+        for actor in ("owner-dev", "alice"):
+            with self.subTest(actor=actor):
+                code, out = run(BASE.replace("첫 기여자 인정", "다른 이유"), BASE, actor)
+                self.assertEqual(code, 1, out)
+                self.assertIn("history", out)
+
+    def test_share_change_requires_new_history(self):
+        no_history = BASE.split("    history:")[0]
+        code, out = run(no_history.replace("share: 5", "share: 10"), no_history, "owner-dev")
+        self.assertEqual(code, 1, out)
+        self.assertIn("history 추가", out)
+
+
 if __name__ == "__main__":
     unittest.main()

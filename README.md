@@ -14,6 +14,8 @@
 | 보상과 권리를 정할 때 | [수익 배분](policies/revenue-share.md) · [기여자 약정](policies/contributor-agreement.md) |
 | 문제가 생겼을 때 | [보안 신고](SECURITY.md) · [행동강령](CODE_OF_CONDUCT.md) · [권리 침해 대응](policies/infringement-response.md) |
 
+[단계별 운영 절차](guides/operating-playbook.md) · [장부 리뷰 기준](guides/reviewer-checklist.md) · [개정안 시행 준비](guides/policy-rollout.md)
+
 ## 정책
 
 - [저작권과 사용 허가](policies/copyright-and-licensing.md)
@@ -25,7 +27,7 @@
 
 ## 작업 양식
 
-[프로젝트 계획](templates/PROJECT_BRIEF.md) · [작업 사전 합의](templates/WORK_AGREEMENT.md) · [기여자 장부](templates/CONTRIBUTORS.yml) · [정산서](templates/SETTLEMENT.md) · [크레딧](templates/CREDITS.md) · [자산 권리 명세](templates/ASSET_REGISTER.md) · [분쟁 기록](templates/DISPUTE_RECORD.md) · [결정 기록](templates/DECISION.md) · [출시 확인](templates/RELEASE_CHECKLIST.md) · [인수인계](templates/HANDOVER.md)
+[프로젝트 계획](templates/PROJECT_BRIEF.md) · [작업 사전 합의](templates/WORK_AGREEMENT.md) · [동의 확인](templates/ACKNOWLEDGEMENT.md) · [개정 공지 초안](templates/POLICY_NOTICE.md) · [기여자 장부](templates/CONTRIBUTORS.yml) · [정산서](templates/SETTLEMENT.md) · [크레딧](templates/CREDITS.md) · [자산 권리 명세](templates/ASSET_REGISTER.md) · [분쟁 기록](templates/DISPUTE_RECORD.md) · [결정 기록](templates/DECISION.md) · [출시 확인](templates/RELEASE_CHECKLIST.md) · [인수인계](templates/HANDOVER.md)
 
 양식의 빈칸을 채우는 것만으로 계약·승인·지급이 완료되지는 않습니다. 권한이 있는 당사자의 확인과 실제 이행을 기록해 주세요. 민감한 자료는 공개 저장소에 넣지 않습니다.
 
