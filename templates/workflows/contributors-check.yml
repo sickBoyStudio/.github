@@ -1,0 +1,14 @@
+# 이 파일을 게임 레포의 .github/workflows/contributors-check.yml 로 복사하세요.
+# CONTRIBUTORS.yml 을 바꾸는 PR마다 형식과 수익 분배 규칙을 자동으로 검사합니다.
+name: 기여자 설정 검사
+
+on:
+  pull_request:
+    paths: [CONTRIBUTORS.yml]
+  push:
+    branches: [main]
+    paths: [CONTRIBUTORS.yml]
+
+jobs:
+  check:
+    uses: sickBoyStudio/.github/.github/workflows/contributors-check.yml@main

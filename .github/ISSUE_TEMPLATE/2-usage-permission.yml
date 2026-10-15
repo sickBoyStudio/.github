@@ -1,0 +1,71 @@
+name: 🔑 코드·에셋 사용 허가 요청
+description: 이 레포의 코드나 에셋을 다른 곳에서 쓰고 싶어요
+title: "[사용 허가] "
+labels: ["사용 허가"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **열람과 학습은 자유, 가져가기는 허락.** 이 레포의 코드·에셋을 복사해서 다른 레포나 게임에 쓰려면 이 요청이 승인되어야 합니다.
+        오너와 해당 부분을 만든 기여자가 댓글로 **"승인합니다 — 조건: …"** 을 남겨야 승인입니다. 14일 동안 답이 없으면 거절로 봅니다.
+        → [저작권과 사용 허가](https://github.com/sickBoyStudio/.github/blob/main/policies/copyright-and-licensing.md)
+  - type: textarea
+    id: what
+    attributes:
+      label: 무엇을 쓰고 싶나요
+      description: 파일 경로와 커밋 해시를 적어 주세요. 커밋 해시로 버전을 고정합니다.
+      placeholder: |
+        src/Server/DoorService.luau @ a1b2c3d
+        assets/models/Door.rbxm @ a1b2c3d
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: 어디에 쓰나요
+      placeholder: sickBoyStudio/내-레포 (게임 이름)
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: 어떻게 쓰나요
+      options:
+        - 그대로 사용
+        - 수정해서 사용
+        - 일부만 참고해서 다시 작성 (복사 포함)
+    validations:
+      required: true
+  - type: dropdown
+    id: commercial
+    attributes:
+      label: 상업적으로 쓰나요 (수익이 나는 게임)
+      options:
+        - 예
+        - 아니요 (테스트·학습용)
+    validations:
+      required: true
+  - type: dropdown
+    id: offer
+    attributes:
+      label: 제안하는 조건
+      multiple: true
+      options:
+        - 무상 + 크레딧 표기
+        - 내 게임 수익 지분 (기여자로 등록)
+        - 일회성 Robux 지급
+        - 범위 제한 (한 게임에만 / 수정 금지 등)
+        - 협의하고 싶어요
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 조건 상세와 이유
+  - type: checkboxes
+    id: agree
+    attributes:
+      label: 확인
+      options:
+        - label: 승인되면 가져간 레포의 CREDITS.md에 출처, 커밋, 조건, 이 이슈 링크를 적겠습니다
+          required: true

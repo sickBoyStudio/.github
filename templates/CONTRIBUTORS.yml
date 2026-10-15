@@ -1,0 +1,38 @@
+# 기여자 설정 — sickBoyStudio 수익 분배 규칙을 따릅니다.
+# https://github.com/sickBoyStudio/.github/blob/main/policies/revenue-share.md
+#
+# - 이 파일은 PR로만 바꿉니다. 오너가 merge하는 순간 효력이 생깁니다.
+# - share 는 이 게임 수익(Earned Robux)에 대한 퍼센트입니다.
+#   오너 몫 = 100 - (기여자 share 합계)
+# - 첫 기여자 등록은 share: 5 로 추가합니다. 올릴 때는 한 번에 최대 +5%p.
+# - 지우지 않습니다. 떠날 때는 status: left 로 바꿉니다.
+
+version: 1           # 파일 형식 버전 (바꾸지 마세요)
+policy: v1.0         # 이 레포가 따르는 수익 분배 규칙 버전
+
+project:
+  name: 게임 이름
+  roblox_group_id:       # 게임을 소유한 Roblox 그룹 ID (출시 전이면 비워 둡니다)
+  roblox_universe_id:    # Experience(Universe) ID
+  released:              # 정식 출시일 YYYY-MM-DD (출시 전이면 비워 둡니다)
+  contributor_cap: 50    # 기여자 지분 합계 상한 (%)
+
+owner:
+  github: 오너-깃허브-아이디
+  roblox_user_id:
+
+contributors: []
+# 기여자 등록 PR에서는 위의 [] 를 지우고 아래처럼 본인 항목을 추가합니다.
+#
+#  - github: example-dev
+#    roblox_user_id: 123456789
+#    role: 프로그래밍 — 전투 시스템
+#    share: 5
+#    status: active            # active | inactive | left | revoked
+#    recognized_at: 2026-10-15 # 첫 인정일 (오너가 merge하는 날로 적습니다)
+#    agreement: v1.0           # 동의한 기여자 약정 버전
+#    contributions:            # 근거가 되는 merge된 PR 번호
+#      - "#12"
+#      - "#15"
+#    history:
+#      - { date: 2026-10-15, share: 5, reason: 첫 기여자 인정 }
