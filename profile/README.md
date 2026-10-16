@@ -19,7 +19,11 @@
 
 ## 내 취향의 프로젝트 찾기
 
-[프로젝트 둘러보기](https://github.com/orgs/sickBoyStudio/repositories) · [팀원 모집 보기](https://github.com/sickBoyStudio/.github/discussions/categories/recruiting)
+[NOLL](https://github.com/orgs/sickBoyStudio/discussions/6) · [Christmas in Seoul](https://github.com/orgs/sickBoyStudio/discussions/7) · [Christmas in Hell](https://github.com/orgs/sickBoyStudio/discussions/8)
+
+세 프로젝트의 **공개 소개**에서 게임의 방향·현재 단계·참여할 수 있는 범위를 먼저 확인하세요.
+
+[팀원 모집 보기](https://github.com/sickBoyStudio/.github/discussions/categories/recruiting)
 
 프로젝트의 **장르·플레이 방식 → 실제 화면과 소개 → 진행 상황 → 참여할 작업** 순서로 살펴보세요. 관심 가는 부분이 있다면 “이 작업을 맡아보고 싶어요”라고 남겨 주세요. 참여 조건은 담당자와 이야기한 뒤 결정하면 됩니다.
 
@@ -28,6 +32,10 @@
 ## 처음 왔다면
 
 가입이나 프로젝트 참여를 먼저 결정할 필요는 없습니다. 관심 있는 곳부터 둘러보세요.
+
+**[👋 처음 온 분 안내](https://github.com/orgs/sickBoyStudio/discussions/1) · [🌱 공개 첫 작업 고르기](https://github.com/sickBoyStudio/.github/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22)**
+
+용어를 쉬운 말로 풀기, Studio 첫걸음 따라 하기, 모바일 글쓰기 점검부터 시작할 수 있습니다. 게임 저장소 초대 없이도 참여할 수 있어요.
 
 | 하고 싶은 것 | 여기서 시작하세요 |
 | :--- | :--- |
