@@ -19,7 +19,7 @@
 
 ## 내 취향의 프로젝트 찾기
 
-[프로젝트 둘러보기](https://github.com/orgs/sickBoyStudio/repositories) · [팀원 모집 보기](https://github.com/sickBoyStudio/.github/discussions/categories/팀원-모집)
+[프로젝트 둘러보기](https://github.com/orgs/sickBoyStudio/repositories) · [팀원 모집 보기](https://github.com/sickBoyStudio/.github/discussions/categories/recruiting)
 
 프로젝트의 **장르·플레이 방식 → 실제 화면과 소개 → 진행 상황 → 참여할 작업** 순서로 살펴보세요. 관심 가는 부분이 있다면 “이 작업을 맡아보고 싶어요”라고 남겨 주세요. 참여 조건은 담당자와 이야기한 뒤 결정하면 됩니다.
 
@@ -31,10 +31,10 @@
 
 | 하고 싶은 것 | 여기서 시작하세요 |
 | :--- | :--- |
-| 가볍게 인사하거나 이야기 나누기 | [자기소개·자유](https://github.com/sickBoyStudio/.github/discussions/categories/자기소개-자유) |
+| 가볍게 인사하거나 이야기 나누기 | [자기소개·자유](https://github.com/sickBoyStudio/.github/discussions/categories/lounge) |
 | 개발하다 막힌 부분 질문하기 | [Q&A](https://github.com/sickBoyStudio/.github/discussions/categories/q-a) — 하려던 것과 막힌 부분을 적어 주세요. |
-| 만들고 있는 것 보여 주기 | [작품 자랑](https://github.com/sickBoyStudio/.github/discussions/categories/작품-자랑) — 진행 중인 작업과 짧은 테스트도 좋습니다. |
-| 프로젝트에 참여하거나 팀원 찾기 | [팀원 모집](https://github.com/sickBoyStudio/.github/discussions/categories/팀원-모집) — 관심 분야와 가능한 작업 범위부터 이야기해 주세요. |
+| 만들고 있는 것 보여 주기 | [작품 자랑](https://github.com/sickBoyStudio/.github/discussions/categories/showcase) — 진행 중인 작업과 짧은 테스트도 좋습니다. |
+| 프로젝트에 참여하거나 팀원 찾기 | [팀원 모집](https://github.com/sickBoyStudio/.github/discussions/categories/recruiting) — 관심 분야와 가능한 작업 범위부터 이야기해 주세요. |
 
 GitHub가 익숙하지 않다면 **Discussions는 게시판**, **Issues는 작업·문제 접수**, **PR은 변경 검토 요청**으로 생각하면 됩니다. 글을 쓰려면 GitHub 로그인이 필요합니다.
 
@@ -72,4 +72,4 @@ GitHub가 익숙하지 않다면 **Discussions는 게시판**, **Issues는 작�
 
 ---
 
-새 소식은 [공지](https://github.com/sickBoyStudio/.github/discussions/categories/공지)에서 확인할 수 있습니다. 어디에 글을 써야 할지 모르겠거나 별도 도움이 필요하면 [지원 안내](https://github.com/sickBoyStudio/.github/blob/main/SUPPORT.md)를 확인해 주세요. 보안 문제는 [비공개 신고 경로](https://github.com/sickBoyStudio/.github/blob/main/SECURITY.md)를 이용해 주세요.
+새 소식은 [공지](https://github.com/sickBoyStudio/.github/discussions/categories/announcements)에서 확인할 수 있습니다. 어디에 글을 써야 할지 모르겠거나 별도 도움이 필요하면 [지원 안내](https://github.com/sickBoyStudio/.github/blob/main/SUPPORT.md)를 확인해 주세요. 보안 문제는 [비공개 신고 경로](https://github.com/sickBoyStudio/.github/blob/main/SECURITY.md)를 이용해 주세요.
