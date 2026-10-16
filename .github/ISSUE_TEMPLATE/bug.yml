@@ -36,3 +36,6 @@ body:
     description: 키·쿠키·사용자 정보를 제거해 주세요.
   validations:
     required: false
+labels:
+- bug
+- '상태: 확인 필요'

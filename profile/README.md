@@ -38,6 +38,12 @@
 
 GitHub가 익숙하지 않다면 **Discussions는 게시판**, **Issues는 작업·문제 접수**, **PR은 변경 검토 요청**으로 생각하면 됩니다. 글을 쓰려면 GitHub 로그인이 필요합니다.
 
+## 🧰 같이 만드는 도구함
+
+[글쓰기 양식 모음](https://github.com/sickBoyStudio/.github/tree/main/templates/discussions) · [GitHub 플레이북](https://github.com/sickBoyStudio/.github/blob/main/guides/github-playbook.md) · [라벨 도감](https://github.com/sickBoyStudio/.github/blob/main/guides/labels.md) · [업데이트 노트 양식](https://github.com/sickBoyStudio/.github/blob/main/templates/RELEASE_NOTES.md)
+
+처음 PR 보내기, 라벨 고르기, 플레이테스트 기록까지. 오늘의 작은 작업을 다음 사람이 이어받기 쉽게 남겨 보세요.
+
 ## 프로젝트에 참여하려면
 
 **모집 글 확인 → 담당자와 역할·범위 이야기 → 참여 절차 확인 → 작업 시작** 순서로 진행합니다.

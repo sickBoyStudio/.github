@@ -1,0 +1,73 @@
+title: '[모집] '
+labels:
+- '소통: 팀원 모집'
+body:
+- type: markdown
+  attributes:
+    value: 🤝 “게임 같이 만들 분”에서 한 걸음 더. 첫 작업이 무엇인지 보이면 서로 맞는 팀을 찾기 쉬워요. 작은 작업도 환영합니다. 공개해도 되는 내용만 올려 주세요. 미공개 코드·개인
+      연락처·정산 자료는 프로젝트의 비공개 경로에서 다룹니다.
+- type: dropdown
+  id: direction
+  attributes:
+    label: 어떤 만남을 찾나요?
+    options:
+    - 프로젝트에 함께할 팀원을 찾아요
+    - 참여할 프로젝트를 찾아요
+  validations:
+    required: true
+- type: textarea
+  id: project
+  attributes:
+    label: 프로젝트 또는 나를 소개해 주세요
+    placeholder: 장르 / 플레이 방식 / 진행 단계 / 공개 가능한 시연. 참여 희망자라면 관심 장르와 경험.
+  validations:
+    required: true
+- type: dropdown
+  id: roles
+  attributes:
+    label: 함께할 분야
+    multiple: true
+    options:
+    - Luau·시스템
+    - 맵·레벨 디자인
+    - 3D 모델링
+    - 애니메이션
+    - UI·UX
+    - 사운드
+    - 기획·밸런스
+    - QA·테스트
+  validations:
+    required: true
+- type: textarea
+  id: scope
+  attributes:
+    label: 첫 작업과 완료 기준
+    placeholder: '예: 작은 대기실 조명 작업 → 낮/밤 프리뷰 2장과 Studio 확인. 참여 희망자라면 맡아보고 싶은 범위.'
+  validations:
+    required: true
+- type: input
+  id: time
+  attributes:
+    label: 가능한 시간·일정
+    placeholder: '예: 주 3~5시간, 주말 중심 / 일정 협의'
+  validations:
+    required: true
+- type: textarea
+  id: terms
+  attributes:
+    label: 참여 조건과 협의할 것
+    placeholder: 역할, 검토 방식, 작업물 사용 범위와 보상 협의 경로. 미정인 것은 미정이라고 적어 주세요.
+    description: 확정된 조건과 협의 중인 항목을 구분하세요. 공개 글에는 수익 금액·계약 원본을 적지 마세요.
+  validations:
+    required: true
+- type: textarea
+  id: apply
+  attributes:
+    label: 참여·연락 방법
+    placeholder: 이 글에 관심 분야와 공개 포트폴리오를 댓글로 남겨 주세요. 개인 연락처는 공개하지 마세요.
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: 모집 글·댓글만으로 정식 기여자 등록이나 보상이 확정되지는 않습니다. 이후 절차는 [공동제작 참여 가이드](https://github.com/sickBoyStudio/.github/blob/main/CONTRIBUTING.md)를
+      확인하세요.

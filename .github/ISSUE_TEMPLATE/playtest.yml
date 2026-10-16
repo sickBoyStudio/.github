@@ -1,0 +1,47 @@
+name: 🎮 플레이테스트 기록
+description: 재미있었던 순간도, 길을 잃은 순간도 다음 빌드의 재료입니다.
+title: '[플레이테스트] '
+labels:
+- 플레이테스트
+body:
+- type: markdown
+  attributes:
+    value: 한 세션의 경험을 기록해 주세요. 반복 재현되는 오류는 별도 버그 이슈로 연결하면 해결하기 쉬워요.
+- type: input
+  id: build
+  attributes:
+    label: 테스트한 버전·날짜
+    placeholder: 빌드 번호 또는 커밋 / YYYY-MM-DD
+  validations:
+    required: true
+- type: input
+  id: device
+  attributes:
+    label: 기기·입력·인원
+    placeholder: PC + 키보드 / 모바일 + 터치 / 2인 서버
+  validations:
+    required: true
+- type: textarea
+  id: route
+  attributes:
+    label: 무엇을 플레이했나요?
+    placeholder: 진입 지점, 플레이한 구간과 대략적인 소요 시간
+  validations:
+    required: true
+- type: textarea
+  id: good
+  attributes:
+    label: 좋았던 순간
+    description: 살리고 싶은 재미·분위기·조작감을 적어 주세요.
+- type: textarea
+  id: friction
+  attributes:
+    label: 막히거나 아쉬웠던 순간
+    placeholder: 없으면 없음. 위치·상황·기대한 결과를 구체적으로.
+  validations:
+    required: true
+- type: textarea
+  id: next
+  attributes:
+    label: 다음 빌드에서 확인할 것
+    description: 가장 효과가 클 것 같은 개선 하나와 참고 화면·관련 버그 이슈

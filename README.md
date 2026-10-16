@@ -24,10 +24,10 @@ templates/                   게임 레포에 복사해서 쓰는 파일
   CONTRIBUTORS.yml  LICENSE  CREDITS.md  workflows/contributors-check.yml
 scripts/check_contributors.py  CONTRIBUTORS.yml 검사기
 .github/
-  ISSUE_TEMPLATE/            참여 신청 · 사용 허가 요청 · 침해 신고 (조직 기본 이슈 양식)
+  ISSUE_TEMPLATE/            참여 신청 · 사용 허가 · 버그 · 개선 · 제작 작업 · 플레이테스트 · 연락 경로
   PULL_REQUEST_TEMPLATE.md   조직 기본 PR 양식
-  DISCUSSION_TEMPLATE/q-a.yml  소통창구 Q&A 질문 양식 (파일 이름 = 카테고리 slug.
-                               GitHub는 한글 slug에 양식을 붙이지 못해서 Q&A만 영문 이름을 씀)
+  DISCUSSION_TEMPLATE/      카테고리별 글쓰기 양식
+  labels.yml                라벨 이름·색·한국어 설명
   workflows/contributors-check.yml   게임 레포에서 호출하는 재사용 워크플로
 ```
 
@@ -56,3 +56,9 @@ python3 -m unittest discover -s tests
 ## 규칙 바꾸기
 
 이 레포에 PR을 보내고 멤버 과반의 Approve를 받습니다. 수익·저작권 규칙은 merge 전에 7일 동안 공지합니다. ([운영 규칙 6장](GOVERNANCE.md#6-의사결정))
+
+## 🧰 함께 만드는 도구함
+
+[GitHub 플레이북](guides/github-playbook.md) · [글쓰기 양식 모음](templates/discussions) · [업데이트 노트](templates/RELEASE_NOTES.md) · [라벨 목록](.github/labels.yml)
+
+이슈·PR·리뷰를 처음 써도 작은 작업부터 시작할 수 있도록 예시를 모았습니다.
